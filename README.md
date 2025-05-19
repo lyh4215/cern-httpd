@@ -5,6 +5,45 @@ This is a **modified version of [W3C-httpd(CERN httpd)](https://www.w3.org/Daemo
 A few lines of code were changed in order to build and run this project properly on modern systems.
 No functional changes were made beyond compatibility fixes.
 
+## Quick Start Guide
+
+### 1. install csh
+```
+$ sudo apt-get install csh
+```
+
+### 2. Build file
+```
+$ make
+```
+
+### 3. make **Document Root**
+```
+$ mkdir test_server
+$ echo "<html><head></head><body>Hello World!</body></html>" > test_server/index.html
+```
+
+
+### 4. create config (httpd.conf)
+```
+# Be sure to set the correct absolute path!
+echo "Pass /* /home/your_username/w3c-httpd/test_server/*" > httpd.conf
+```
+
+### 5. run
+```
+./Daemon/linux/httpd -v -r ./httpd.conf -p 8080
+```
+
+### 6. Open in browser
+Visit : [localhost:8080/index.html](http://localhost:8080/index.html)
+
+
+
+---
+
+Below is original version of README.
+
 ---
 
 This is a small upgrade release of the CERN server (a.k.a. W3C
