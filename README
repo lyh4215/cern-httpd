@@ -1,3 +1,11 @@
+## Read this!
+
+This is a **modified version of [W3C-httpd(CERN httpd)](https://www.w3.org/Daemon/)**
+
+A few lines of code were changed in order to build and run this project properly on modern systems.
+No functional changes were made beyond compatibility fixes.
+
+---
 
 This is a small upgrade release of the CERN server (a.k.a. W3C
 httpd). It includes a set of bug fixes and some improvements. The
