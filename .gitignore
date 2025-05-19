@@ -52,3 +52,5 @@ Daemon/linux/cgiutils
 
 # TEMP 파일
 /tmp/*
+
+/test_server
