@@ -79,6 +79,7 @@
 #include "HTError.h"
 #include "HTTCP.h"
 #include "HTFTP.h"					 /* Implemented here */
+#include <time.h>
 
 #ifdef VMS
 #include "HTVMSUtils.h"

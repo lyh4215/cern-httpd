@@ -168,7 +168,7 @@ PURIFY = purify \
 #	ISC 3.0 doesn't have ln -s, that's the reason for the if clause
 #
 $(PROD) : $(OBJS)
-	$(CC) -o $(PROD)_$(VD)  $(OBJS) $(LFLAGS) $(SOCKSLIB) $(MATHLIB)
+	$(CC) -o $(PROD)_$(VD)  $(OBJS) $(LFLAGS) $(SOCKSLIB) $(MATHLIB) -lcrypt
 	-rm $(PROD)
 	if [ $(WWW_MACH) != isc3.0 ]; then ln -s $(PROD)_$(VD) $(PROD); fi
 

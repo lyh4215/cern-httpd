@@ -105,7 +105,12 @@ echo "WWW build for machine type:                            " $WWW_MACH
 
 #	We don't want SHELL set to something funny to screw up make
 
-(cd All/Implementation; unsetenv SHELL; make $1)
+(cd All/Implementation; unsetenv SHELL; \
+ make \
+   CFLAGS="-std=gnu89 -Wno-implicit-function-declaration -Wno-incompatible-pointer-types" \
+   LDFLAGS="-lcrypt" \
+   $1)
+
 set stat = $status
 echo
 echo "WWW build for " $WWW_MACH  " done. status = " $stat

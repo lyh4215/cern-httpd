@@ -4,7 +4,7 @@
 **
 ** AUTHORS:
 **	AL	Ari Luotonen	luotonen@dxcern.cern.ch
-**	MD	Mark Dönszelmann 	duns@vxdeop.cern.ch
+**	MD	Mark Dï¿½nszelmann 	duns@vxdeop.cern.ch
 **
 ** HISTORY:
 **	10 Mar 94  AL	First written.
@@ -18,6 +18,7 @@
 #include "HTSUtils.h"
 #include "tcp.h"
 #include "HTConfig.h"
+#include <time.h>
 
 #if defined(Mips) || (defined(VMS) && !defined(DECC))
 PRIVATE char * wkdays[7] = {

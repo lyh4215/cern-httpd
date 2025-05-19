@@ -1,0 +1,54 @@
+# 컴파일된 바이너리 실행파일
+httpd
+httpd_*
+htadm
+htimage
+cgiparse
+cgiutils
+FINDGate
+tigate
+
+# 오브젝트 파일들
+*.o
+
+# 자동 생성된 Makefile
+**/Makefile
+Daemon/linux/Makefile
+
+# 백업 파일 / 임시 파일
+*~
+*.bak
+*.old
+*.CKP
+*.ln
+core
+core.*
+
+# 로그/디버그
+*.log
+*.out
+*.err
+
+# Purify / gmon profiling
+purify.log
+gmon.out
+
+# 기타 자동 생성 파일들
+Daemon/linux/httpd
+Daemon/linux/httpd_*
+Daemon/linux/htadm
+Daemon/linux/htimage
+Daemon/linux/cgiparse
+Daemon/linux/cgiutils
+
+# 라이브러리 아카이브
+*.a
+
+# IDE / 편집기 임시 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TEMP 파일
+/tmp/*

@@ -69,7 +69,7 @@ HFILES = HTPasswd.h HTAuth.h   HTLex.h HTGroup.h HTACL.h HTAAProt.h \
 all: httpd htadm htimage cgiparse cgiutils
 
 httpd: $(OBJS)
-	$(CC) -o ./httpd_$(VD) $(OBJS) $(LDFLAGS) -L$(LIBDIR) $(LIBS)
+	$(CC) -o ./httpd_$(VD) $(OBJS) $(LDFLAGS) -L$(LIBDIR) $(LIBS) -lcrypt
 	-$(RM) ./httpd
 	$(LN_S) ./httpd_$(VD) ./httpd
 

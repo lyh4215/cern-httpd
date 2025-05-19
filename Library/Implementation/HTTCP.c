@@ -117,7 +117,7 @@ extern int errno;
 #ifndef VMS
 #ifndef NeXT
 #ifndef THINK_C
-extern char *sys_errlist[];		/* see man perror on cernvax */
+extern const char *const sys_errlist[];		/* see man perror on cernvax */
 extern int sys_nerr;
 #endif  /* think c */
 #endif	/* NeXT */
