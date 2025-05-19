@@ -13,7 +13,10 @@ $ sudo apt-get install csh
 ```
 
 ### 2. Build file
+**you should follow this order**
 ```
+$ make
+$ make clean
 $ make
 ```
 
