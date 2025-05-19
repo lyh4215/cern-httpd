@@ -28,14 +28,15 @@ $ echo '<html><head></head><body>Hello World!</body></html>' > test_server/index
 
 
 ### 4. create config (httpd.conf)
+**Be sure to set the correct absolute path!**
 ```
-# Be sure to set the correct absolute path!
-echo 'Pass /* /home/your_username/w3c-httpd/test_server/*' > httpd.conf
+
+$ echo 'Pass /* /home/your_username/w3c-httpd/test_server/*' > httpd.conf
 ```
 
 ### 5. run
 ```
-./Daemon/linux/httpd -v -r ./httpd.conf -p 8080
+$ ./Daemon/linux/httpd -v -r ./httpd.conf -p 8080
 ```
 
 ### 6. Open in browser
