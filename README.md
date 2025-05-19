@@ -23,14 +23,14 @@ $ make
 ### 3. make **Document Root**
 ```
 $ mkdir test_server
-$ echo "<html><head></head><body>Hello World!</body></html>" > test_server/index.html
+$ echo '<html><head></head><body>Hello World!</body></html>' > test_server/index.html
 ```
 
 
 ### 4. create config (httpd.conf)
 ```
 # Be sure to set the correct absolute path!
-echo "Pass /* /home/your_username/w3c-httpd/test_server/*" > httpd.conf
+echo 'Pass /* /home/your_username/w3c-httpd/test_server/*' > httpd.conf
 ```
 
 ### 5. run
