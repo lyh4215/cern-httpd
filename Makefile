@@ -6,6 +6,7 @@
 #
 all :
 	./BUILD
+	$(MAKE) -C Library/linux
 
 purify:
 	(cd Daemon/sun4; make purify)
