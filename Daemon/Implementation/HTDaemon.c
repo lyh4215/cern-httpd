@@ -2615,6 +2615,9 @@ PRIVATE int server_loop NOARGS
                 }
 
                 /*  Read the message now on whatever channel there is */
+                    /*
+                        rfc931 protocol is not supported on nowday (it is substituted by other method (ex. JWT tokens))
+                    */
                 CTRACE(tfp,"Reading..... socket %d from host %s\n",
                        com_soc, HTClientHost);
 

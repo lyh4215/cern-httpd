@@ -47,6 +47,8 @@ typedef unsigned long mode_t;
 #include "HTError.h"
 #include "HTDirBrw.h"					 /* Implemented here */
 
+#include <time.h>
+
 #ifdef VMS
 #include "HTVMSUtils.h"
 #endif /* VMS */
