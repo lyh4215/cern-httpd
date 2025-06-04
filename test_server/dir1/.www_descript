@@ -1,0 +1,4 @@
+d *.gif image/gif binary
+d *.html text/html
+d *.jpg image/jpeg binary
+d sample.json this is sample json
